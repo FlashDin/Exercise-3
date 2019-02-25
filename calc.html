@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+    <div class="calc-body">
+        <h1>Calculator</h1>
+        <table class="table-center">
+            <tr>
+                <td>
+                    <input type="text" class="input-calc-tmp" id="calcSpTor" name="calcSpTor" readonly>
+                </td>
+                <td colspan="3">
+                    <input type="text" class="input-calc-tmp" id="calcTmp" name="calcTmp" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="text" class="input-calc" id="calcText" name="calcText" style="text-align: right; font-size: 48px;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p id="calcResult"></p>
+                </td>
+                <td>
+                    <button id="ce" class="input-calc" onclick="clearField()">CE</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="one" class="input-calc" onclick="numPad('1')">1</button></td>
+                <td><button id="two" class="input-calc" onclick="numPad('2')">2</button></td>
+                <td><button id="three" class="input-calc" onclick="numPad('3')">3</button></td>
+                <td>
+                    <button id="plus" class="input-calc" onclick="sepPad('+')">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button id="four" class="input-calc" onclick="numPad('4')">4</button></td>
+                <td><button id="five" class="input-calc" onclick="numPad('5')">5</button></td>
+                <td><button id="six" class="input-calc" onclick="numPad('6')">6</button></td>
+                <td><button id="minus" class="input-calc" onclick="sepPad('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="seven" class="input-calc" onclick="numPad('7')">7</button></td>
+                <td><button id="eight" class="input-calc" onclick="numPad('8')">8</button></td>
+                <td><button id="nine" class="input-calc" onclick="numPad('9')">9</button></td>
+                <td><button id="multiplication" class="input-calc" onclick="sepPad('*')">*</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="comma" onclick="numPad('.')" style="height: 50px; font-size: 16; font-weight: bold;">.</button>
+                    <button id="percent" onclick="sepPad('%')" style="height: 50px; font-size: 16; font-weight: bold;">%</button>
+                </td>
+                <td><button id="zero" class="input-calc" onclick="numPad('0')">0</button></td>
+                <td><button id="equal" class="input-calc" onclick="equal()">=</button></td>
+                <td><button id="division" class="input-calc" onclick="sepPad('/')">/</button></td>
+            </tr>
+        </table>
+    </div>
+</center>
+</body>
+<script type="application/javascript" src="test.js"></script>
+</html>
